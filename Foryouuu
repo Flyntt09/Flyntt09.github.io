@@ -5,33 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For You ❤️</title>
     <style>
-        .envelope {
-            width: 200px;
+        .heart {
+            width: 150px;
             height: 150px;
-            background-color: #f8d7da;
-            border: 1px solid #d6b9b8;
-            border-radius: 10px;
+            background-color: #ff6b81;
+            clip-path: polygon(50% 0%, 0% 35%, 50% 100%, 100% 35%);
             position: relative;
             cursor: pointer;
             margin: 50px auto;
         }
-        .envelope:before {
+        .heart:before, .heart:after {
             content: "";
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 60%;
-            background-color: #fff;
-            border-bottom: 1px solid #d6b9b8;
+            width: 150px;
+            height: 150px;
+            background-color: #ff6b81;
+            border-radius: 50%;
         }
-        .envelope .flap {
-            background-color: #f8d7da;
-            width: 100%;
-            height: 40%;
-            position: absolute;
-            bottom: 0;
-            border-top: 1px solid #d6b9b8;
+        .heart:before {
+            left: -75px;
+            top: 0;
+        }
+        .heart:after {
+            right: -75px;
+            top: 0;
         }
         .message {
             display: none;
@@ -41,25 +38,22 @@
         }
     </style>
     <script>
-        function openEnvelope() {
-            document.getElementById("envelope").style.display = "none";
+        function openHeart() {
+            document.getElementById("heart").style.display = "none";
             document.getElementById("message").style.display = "block";
         }
     </script>
 </head>
 <body style="text-align: center; padding: 50px;">
-    <h1>Click the Envelope to Open My Message! 💌</h1>
+    <h1>Click the Heart to Open My Sweet Message! 💌</h1>
     
-    <div id="envelope" class="envelope" onclick="openEnvelope()">
-        <div class="flap"></div>
+    <div id="heart" class="heart" onclick="openHeart()">
     </div>
     
     <div id="message" class="message">
-        <p>My dearest,</p>
-        <p>My love, I want you to know that my feelings for you are genuine and unwavering. I promise to stand by your side through every moment, offering my full support and protection. These are not just words, but a deep commitment from my heart.
-
-You will never have to face any struggle alone; I am here for you in every way possible. You deserve nothing but the best—the love, the care, and all the efforts that this world can offer. Through every high and low, know that I will always be here for you, by your side. I love you more than words can express, and I am grateful for you every single day.</p>
-        <p>Always and forever,</p>
+        <p>My beloved,</p>
+        <p>Each moment spent with you feels like a dream come true. You bring so much joy into my life, and I can't help but smile every time I think of you. Your love fills my heart with warmth, and your presence makes everything feel right. I promise to cherish every second we share and to love you more with each passing day.</p>
+        <p>Forever yours,</p>
         <p>Your love 💖</p>
     </div>
 </body>
