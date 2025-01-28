@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <style>
+        .envelope {
+            width: 200px;
+            height: 150px;
+            background-color: #f8d7da;
+            border: 1px solid #d6b9b8;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+            margin: 50px auto;
+        }
+        .envelope:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            background-color: #fff;
+            border-bottom: 1px solid #d6b9b8;
+        }
+        .envelope .flap {
+            background-color: #f8d7da;
+            width: 100%;
+            height: 40%;
+            position: absolute;
+            bottom: 0;
+            border-top: 1px solid #d6b9b8;
+        }
+        .message {
+            display: none;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function openEnvelope() {
+            document.getElementById("envelope").style.display = "none";
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+</head>
+<body style="text-align: center; padding: 50px;">
+    <h1>Click the Envelope to Open My Message! 💌</h1>
+    
+    <div id="envelope" class="envelope" onclick="openEnvelope()">
+        <div class="flap"></div>
+    </div>
+    
+    <div id="message" class="message">
+        <p>My dearest,</p>
+        <p>My love, I want you to know that my feelings for you are genuine and unwavering. I promise to stand by your side through every moment, offering my full support and protection. These are not just words, but a deep commitment from my heart.
+
+You will never have to face any struggle alone; I am here for you in every way possible. You deserve nothing but the best—the love, the care, and all the efforts that this world can offer. Through every high and low, know that I will always be here for you, by your side. I love you more than words can express, and I am grateful for you every single day.</p>
+        <p>Always and forever,</p>
+        <p>Your love 💖</p>
+    </div>
+</body>
+</html>
